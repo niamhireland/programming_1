@@ -1,0 +1,35 @@
+#TASK
+#In Python, a segment (substring) of a string is called a slice. Selecting a slice is done in a similar way to selecting a character, for example:
+# a n i m a l s = ' h e r d o f e l e p h a n t s '
+# s e g = a n i m a l s [ x : y ]
+# p r i n t ( ' Segment i s : ' , s e g )
+# where x and y are replaced by integers (indexes). Experiment with different values of x and y. For example:
+# (a) What happens when x and y are the same?
+
+food = 'donut' 
+seg = food [5:5] #Attempted this with a couple of different integers, it did not return any result 
+print ('Segment is:', seg)
+
+#(b) What happens when x is greater than y?
+
+county = 'dublin' 
+seg = county [3:2] #Attempted this with different integer combinations, did not return any result 
+print ('Segment is:', seg)
+
+#(c) What happens when x is omitted?
+
+country = 'ireland'
+seg = country [:2]
+print ('Segment is:', seg) #This returned 'ir'.
+
+#(d) What happens when y is omitted?
+
+plant = 'shamrock'
+seg = plant [3:] 
+print ('Segment is:', seg) #This returned 'mrock'.
+
+#(e) What happens when both x and y are omitted?
+
+device = 'laptop'
+seg = device [:] #This returned 'laptop'.
+print ('Segment is:', seg)
